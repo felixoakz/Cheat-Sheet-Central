@@ -1,0 +1,30 @@
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: rgb(246, 232, 234);
+}
+
+
+div#google_translate_element {
+    text-align: right;
+    margin: .5rem;
+}
+
+footer {
+    background-color: rgb(33, 37, 41);
+    color: rgb(255, 253, 130);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+div#pagebox {
+    margin: 5rem;
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+}
