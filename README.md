@@ -1,2 +1,3 @@
 # Cheat-Sheet-Central
-Had to create a project as an intro do WebDev and I had this idea to gather all this cheat sheets we download as .jpg in a single website
+Had to create a project as an intro do Web developing and I took the opportunity to put a idea I had:
+A webpage to gather all the cheat sheets, like terminal commands and keyboard shortcuts from the most used tools.
