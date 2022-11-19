@@ -57,13 +57,24 @@
                     <td>Delete table</td>
                     <td>DROP FROM TABLE;</td>
                 </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Queries with constraints</td>
+                    <td>SELECT * FROM table_name WHERE <span style="font-style: italic;">condition;</span></td>
+                </tr>
                 </tbody>
             </table>
         </div>
-        <div class="d-flex" style="height: 200px;">
-            <div class="vr"></div>
+
+        <!-- Adding comments related to SQL commands -->
+        <div id="pagebox">
+            <button type="button" class="btn btn-warning" id="pagebox">Warning</button>
+            <hr>
+            <div class="alert alert-dark" role="alert">
+                    An asterisk " * " can be used to specify that the query should return all <span style="font-weight:bold ;">columns</span> of the queried tables. 
+            </div>
         </div>
-        <div class="sticky-bottom">
+        <div>
             <footer class="bg-dark text-center">
                 <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
                     © 2022 Copyright:
@@ -73,3 +84,4 @@
         </div>
     </body>
 </html>
+
