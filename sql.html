@@ -68,13 +68,27 @@
 
         <!-- Adding comments related to SQL commands -->
         <div id="pagebox">
-            <button type="button" class="btn btn-warning" id="pagebox">Warning</button>
+            <button type="button" class="btn btn-warning" id="warning">Warning</button>
             <hr>
-            <div class="alert alert-dark" role="alert">
+            <div class="alert alert-dark" role="alert" id="message" hidden>
                     An asterisk " * " can be used to specify that the query should return all <span style="font-weight:bold ;">columns</span> of the queried tables. 
             </div>
+            <script>
+                let s = document.getElementById('warning');
+                let m = document.getElementById('message');
+                s.addEventListener('click', function(){
+                    if(m.hidden === true)
+                    {
+                        m.hidden = false;
+                    }
+                    else
+                    {
+                        m.hidden = true;
+                    }
+                })
+            </script>
         </div>
-        <div>
+        <div class="sticky-bottom">
             <footer class="bg-dark text-center">
                 <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.2);">
                     © 2022 Copyright:
