@@ -57,11 +57,36 @@
                     <td>Delete table</td>
                     <td>DROP FROM TABLE;</td>
                 </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Queries with constraints</td>
+                    <td>SELECT * FROM table_name WHERE <span style="font-style: italic;">condition;</span></td>
+                </tr>
                 </tbody>
             </table>
         </div>
-        <div class="d-flex" style="height: 200px;">
-            <div class="vr"></div>
+
+        <!-- Adding comments related to SQL commands -->
+        <div id="pagebox">
+            <button type="button" class="btn btn-warning" id="warning">Warning</button>
+            <hr>
+            <div class="alert alert-dark" role="alert" id="message" hidden>
+                    An asterisk " * " can be used to specify that the query should return all <span style="font-weight:bold ;">columns</span> of the queried tables. 
+            </div>
+            <script>
+                let s = document.getElementById('warning');
+                let m = document.getElementById('message');
+                s.addEventListener('click', function(){
+                    if(m.hidden === true)
+                    {
+                        m.hidden = false;
+                    }
+                    else
+                    {
+                        m.hidden = true;
+                    }
+                })
+            </script>
         </div>
         <div class="sticky-bottom">
             <footer class="bg-dark text-center">
@@ -73,3 +98,4 @@
         </div>
     </body>
 </html>
+
