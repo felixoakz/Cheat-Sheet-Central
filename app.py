@@ -39,16 +39,17 @@ def index():
         return render_template("index.html", sheets=SHEETS)
     else:
         sheet = request.form.get("sheet")
-        if sheet == "SQL":
-            tables = SQL
-        elif sheet == "VSCODE":
-            tables = VSCODE
-        elif sheet == "GIT":
-            tables = GIT
-        elif sheet == "HTML":
-            tables = HTML
-        elif sheet == "CSS":
-            tables = CSS
+        match sheet:
+            case "SQL":
+                tables = SQL
+            case "VSCODE""
+                tables = VSCODE
+            case "GIT":
+                tables = GIT
+            case "HTML":
+                tables = HTML
+            case "CSS":
+                tables = CSS
         # sheet variable is sending selected button to new template
         return render_template("sheet.html", sheets=SHEETS, sheet=sheet, tables=tables)
 
