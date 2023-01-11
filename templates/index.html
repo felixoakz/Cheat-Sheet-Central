@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <!-- google translate api and script -->
+    <div id="google_translate_element"></div>
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            function googleTranslateElementInit(){
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+
+        <!-- page content -->
+        <div>
+            <img src="static/favicon.ico.png" alt="icon" width="150">
+            <h1 class="fw-bold m-4">This page will serve as an attachment to your brain's "database"</h1>
+            <div>
+              <p class="lead mb-3">Mostly when we are learning a new thing, we can often get a bit anxious about the amount of information we find.
+                This is because there are a LOT of shortcuts and commands in the various tools we need to learn.
+                And we still need to master and use all of this while we're learning and building even bigger things.<br><br>
+    
+                The goal here is to have a simple page to compile a variety of sources of tips and techniques from the internet.
+                This allows us to easily identify what really matters. We can then gradually learn and use those more important commands
+                until it becomes natural, giving us more time and energy to focus on what really matters right now.</p>
+            </div>
+        </div>
+        
+        <!-- button of each sheet -->
+        <form action="/" method="post">
+            {% for sheet in sheets %}
+            <input type="submit" class="btn btn-primary btn-dark my-4" name="sheet" value="{{ sheet }}">
+            {% endfor %}
+        </form>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: rgb(246, 232, 234);
+}
+
+
+div#google_translate_element {
+    text-align: left;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
