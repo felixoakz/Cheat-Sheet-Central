@@ -53,3 +53,4 @@ def index():
         # sheet variable is sending selected button to new template
         return render_template("sheet.html", sheets=SHEETS, sheet=sheet, tables=tables)
 
+# write updates before publishing
