@@ -42,7 +42,7 @@ def index():
         match sheet:
             case "SQL":
                 tables = SQL
-            case "VSCODE""
+            case "VSCODE":
                 tables = VSCODE
             case "GIT":
                 tables = GIT
